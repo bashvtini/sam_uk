@@ -528,14 +528,14 @@ nav .close img {
 
 #modal .content {
   max-height: 80vh;
-  max-width: 50vw;
+  max-width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #modal .content img {
-  width: 80%;
+  width: 100%;
 }
 
 @media (max-width: 772px) {
@@ -546,6 +546,10 @@ nav .close img {
 
   .projects .grid div {
     height: 200px;
+  }
+
+  #modal .content {
+    max-width: 80vw;
   }
 }
 
