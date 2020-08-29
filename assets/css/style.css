@@ -1,6 +1,6 @@
 /* Default ##### Start ##### */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-/* @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");   */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400");
 
 :root {
   --main-color: #ff7557;
@@ -12,7 +12,7 @@
   padding: 0;
   margin: 0;
   color: #383535;
-  font-family: "Roboto", sans-serif;
+  font-family: "Heebo", sans-serif;
   scroll-behavior: smooth;
   -webkit-appearance: none;
   -webkit-overflow-scrolling: touch;
@@ -253,6 +253,7 @@ nav .close img {
   color: white;
   font-size: 4em;
   font-weight: 700;
+  line-height: 70px;
 }
 
 .slogan .slogan_text p {
@@ -273,8 +274,23 @@ nav .close img {
 }
 
 .slogan .slogan_text img {
-  width: 15px;
+  width: 10px;
   margin-left: 10px;
+  transition: transform 0.4s;
+}
+
+.slogan .slogan_text a:hover img {
+  animation: test 1s infinite ease;
+}
+
+@keyframes test {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
 }
 
 .slogan .slogan_image {
@@ -390,7 +406,7 @@ nav .close img {
 
 .main .jobs ul li {
   border: 1px solid #eee;
-  background-color: #193253;
+  background-color: #f1f6f9;
   padding: 20px;
 }
 
@@ -405,7 +421,6 @@ nav .close img {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #e0e0e0;
   margin-top: 20px;
 }
 
@@ -418,7 +433,6 @@ nav .close img {
 .main .jobs ul li div p {
   font-weight: 700;
   margin-left: 25px;
-  color: white;
 }
 
 .main .jobs ul li img {
