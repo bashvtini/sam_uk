@@ -9,9 +9,7 @@ const dropdownSwitch = () => {
   dropdownMenu.classList.toggle("show");
   dropdownStatus = !dropdownStatus;
 
-  document.querySelector("body").style.overflowY = dropdownStatus
-    ? "hidden"
-    : "scroll";
+  document.querySelector("body").classList.toggle("fixed");
 };
 
 window.addEventListener("resize", (e) => {
