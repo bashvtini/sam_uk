@@ -535,8 +535,8 @@ nav .close img {
 }
 
 #modal .content {
-  max-height: 80vh;
-  max-width: 40vw;
+  height: 80vh;
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -557,7 +557,7 @@ nav .close img {
   }
 
   #modal .content {
-    max-width: 80vw;
+    width: 80vw;
   }
 }
 
