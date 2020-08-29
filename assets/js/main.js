@@ -22,11 +22,15 @@ window.addEventListener("resize", (e) => {
 
 window.addEventListener("scroll", () => {
   const navHeight = navbar.offsetHeight;
-  const currentPosition = document.documentElement.scrollTop;
 
-  test.textContent = currentPosition;
+  const scrollTop = Math.max(
+    window.pageYOffset,
+    document.documentElement.scrollTop,
+    document.body.scrollTop
+  );
+  test.textContent = scrollTop;
 
-  if (currentPosition > 100) {
+  if (scrollTop > 100) {
     if (!navbar.classList.contains("sticky")) {
       navbar.classList.add("sticky");
       document.querySelector("body").style.paddingTop = navHeight + "px";
@@ -47,10 +51,8 @@ const modalContent = document.querySelector("#modal .content");
 const galleryPictures = document.querySelectorAll(".projects .grid img");
 let modalStatus = false;
 
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("open");
-  }
+modal.addEventListener("click", (e) => {
+  modal.classList.remove("open");
 });
 
 galleryPictures.forEach((picture) => {
