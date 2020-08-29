@@ -4,7 +4,6 @@ const dropdownButton = document.querySelector("nav .dropdown-button");
 const dropdownMenu = document.querySelector("nav .dropdown-menu");
 const closeDropdown = document.querySelector("nav .dropdown-menu .close");
 let dropdownStatus = false;
-const test = document.querySelector(".test");
 
 const dropdownSwitch = () => {
   dropdownMenu.classList.toggle("show");
@@ -28,7 +27,6 @@ window.addEventListener("scroll", () => {
     document.documentElement.scrollTop,
     document.body.scrollTop
   );
-  test.textContent = scrollTop;
 
   if (scrollTop > 100) {
     if (!navbar.classList.contains("sticky")) {

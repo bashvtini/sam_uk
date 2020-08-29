@@ -31,12 +31,6 @@ body.fixed {
   height: 100vh;
 }
 
-.test {
-  position: fixed;
-  top: 0;
-  z-index: 555;
-}
-
 ul {
   list-style: none;
 }
@@ -717,6 +711,10 @@ footer .logo img {
 
   footer .logo {
     display: none;
+  }
+
+  footer p {
+    text-align: center;
   }
 }
 
