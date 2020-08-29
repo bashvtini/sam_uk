@@ -26,7 +26,8 @@ body {
 }
 
 body.fixed {
-  overflow-y: hidden;
+  overflow-y: hidden !important;
+  height: 100vh;
 }
 
 ul {
