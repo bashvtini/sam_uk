@@ -402,6 +402,7 @@ nav .close img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+  margin: 10px 0;
 }
 
 .main .jobs ul li {
@@ -694,24 +695,8 @@ footer p {
 
 footer .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .social {
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-footer .social img {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-}
-
-footer .logo img {
-  width: 100px;
 }
 
 @media (max-width: 600px) {
@@ -723,13 +708,46 @@ footer .logo img {
     padding-top: 20px;
   }
 
-  footer .logo {
-    display: none;
-  }
-
   footer p {
     text-align: center;
   }
 }
 
 /* Footer ##### End ##### */
+
+.view-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.view-more a {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.view-more img {
+  width: 10px;
+  margin-left: 10px;
+  transition: transform 0.4s;
+}
+
+/* Gallery site */
+.project-gallery {
+  margin-top: 50px;
+}
+
+.project-gallery .grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-gallery .grid img {
+  width: 100%;
+}

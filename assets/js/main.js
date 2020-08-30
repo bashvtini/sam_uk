@@ -65,18 +65,19 @@ galleryPictures.forEach((picture) => {
 // Reviews CArusel
 const reviews = [
   {
-    name: "John Lock",
+    name: "John",
     text:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, laborum.",
+      "Very pleased with the work Agim done for me. Three bedrooms plastered and decorated very well. They were hard working, accommodating, and cleaned up after finishing. Definitely would use again. Recommended",
   },
   {
-    name: "Amy Shumer",
+    name: "Amy",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, maxime quam! Tempora sequi odit repellendus!",
+      "The guys worked really hard, did a great job and were a pleasure to have around the house. I would definitely use Them again.",
   },
   {
-    name: "Tina Vola",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    name: "Sebastian",
+    text:
+      "Really reliable. Turned up on time and was really friendly. Quality of the work was excellent and he was really thorough. Wouldn't hesitate to recommend him to anyone. Thanks Sebastian x",
   },
 ];
 
