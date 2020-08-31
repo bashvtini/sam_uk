@@ -560,7 +560,7 @@ nav .close img {
 }
 
 #modal .content img {
-  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 772px) {
